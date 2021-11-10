@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>RAGE</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/donate.css">
+	<link rel="icon" href="images/icon.png">
+</head>
+<body>
+
+	<div id="fog" class="h"></div>
+
+	<link rel="icon" href="images/icon.png">
+
+<div id="header">
+	
+	<img src="images/hlogo.png" id="hlogo"/>
+
+	<div id="head-blocks">
+		<div class="head-block" onclick="location.href='index.html';">ГЛАВНАЯ</div>
+		<div class="head-block" onclick="location.href='donat.html';">ПОПОЛНИТЬ СЧЕТ</div>
+		<div class="head-block" onclick="window.open('https://vk.com/hayzens');">ТЕХ. ПОДДЕРЖКА</div>
+	</div>
+
+<!-- 	<button id="vk-button" onclick="window.open('https:vk.com/rage5mtasa');">
+		<a>Группа ВКонтакте</a>
+		<img src="images/vk.png"/>
+	</button> -->
+
+</div>
+	<div id="donate-window">
+		<h3 style="
+			position: absolute;
+			bottom: calc(100% - 40px);
+			left: 0;
+			right: 0;
+			margin: auto;
+			text-align: center;
+		">
+			Курс: 1 рубль = 1 R-Coin 
+		</h3>
+		<div class="input-div" id="donat-server"><input disabled="disabled" value="RAGE #1"/></div>
+		<div class="input-div" id="donat-login"><input placeholder="Введите логин"/></div>
+		<div class="input-div" id="donat-sum"><input placeholder="Введите сумму"/></div>
+		<button class="button" id="donat-button" onclick="buyDonat();">Перейти к оплате</button>
+	</div>
+
+	<div id="complects-window" style="
+		margin-bottom: 30px;
+	">
+		<!-- <h1 style="text-align: center;">Набором выгоднее!</h1> -->
+		<br/>
+
+		<div style="
+			width: 1000px;
+			text-align: center;
+			margin: auto;
+		">
+						</div>
+
+	</div>
+
+    <div id="complects-buy" class="window center h" style="width: 913px; height: 515px;">
+        <div class="close-btn" onclick="closeComplects();"></div>
+
+        <div id="complect-name"></div>
+        <div id="complect-cost"></div>
+
+        <image id="complect-buy-image" src="" width="300" height="200"/>
+
+        <div id="complect-content">
+            
+        </div>
+
+        <input id="complect-login" colored placeholder="Ваш логин"/>
+        <div id="_complect-server"></div>
+        <select id="complect-server" disabled colored style="
+        ">
+            <option value="0">RAGE #1</option>        </select>
+
+        <button class="complect-btn" colored onclick="buyComplect();">Перейти к оплате</button>
+    </div>
+
+	<div id="footer">
+
+	<div id="footer-sections">
+
+		<div class="section" style="width: 80%;">
+
+			<br/>
+			<h2 style="margin: 0" colored>НАШИ КОНТАКТЫ</h3>
+			<br/>
+			<div class="bottom-label" onclick="window.location = 'https://vk.com/hayzens';">Служба поддержки</div>
+			<br/>
+			<br/>
+			<a class="bottom-label" gray>Copyright © 2021 RAGE.MTA</a>
+
+		</div>
+
+		<div class="section" style="width: 20%;">
+
+			<br/><br/>
+			<img src="https://cdn.web.money/passport/atstimg/88x31_user/88x31_wm_v_blue_on_white_ru.png"/>
+			<br/>
+			<img src="images/unitpay.png"/>
+			<br/>
+			<div class="bottom-label" onclick="window.location = 'refund.html';">Политика возврата средств</div>
+			<div class="bottom-label" onclick="window.location = 'rules.html';">Правила сервиса</div>
+			<br/>
+
+		</div>
+
+	</div>
+
+
+</div>
+	<script src="js/jquery-3.3.1.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/complects.js"></script>
+</body>
+</html>
